@@ -1,5 +1,5 @@
 #1st problem
-'''def sumofArray(a): 
+def sumofArray(a): 
   sum=0
   for i in a:
     sum=sum+i
@@ -14,9 +14,9 @@ for i in a:
   sum=sum+i
 print(sum)
 res=sumofArray(a)
-print(res)'''
+print(res)
 #2nd problem
-'''def search(a,el):
+def search(a,el):
   c=0
   for i in a:
     if el==i:
@@ -26,36 +26,36 @@ n=int(input())
 a=list(map(int,input().split(' ')))
 ele=int(input())
 #search(a,ele)
-print(search(a,ele))'''
+print(search(a,ele))
 #3rd problem
-'''n=int(input())
+n=int(input())
 a=list(map(int,input().split(' ')))
 sumvalue=0
 for i in a:
   sumvalue+=i
 res=sumvalue/n
 print(res)
-print(f'{res:.2f}')'''
+print(f'{res:.2f}')
 #4th problem
-'''def remove(string):
+def remove(string):
   for ch in string:                                                                  
     if  ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u' :
       string=string.replace(ch,"")
   return string
 string=input()
 result=remove(string)
-print(result)'''
+print(result)
 
-'''def traversal(a):
+def traversal(a):
   print('[',end="")
   for i in range(len(a)-1):
     print(a[i],end=", ")
   print(f'{a[-1]}]')
 a=[1,2,3,4,5]
 print(a)
-traversal(a)'''
+traversal(a)
 #insertion of array
-'''def insert(ar,el,ind):
+def insert(ar,el,ind):
   ar2=[0 for i in range(len(a)+1)]
   for i in range(ind):
     ar2[i]=ar[i]
@@ -69,9 +69,9 @@ print(a)
 el=int(input())
 ind=int(input())
 a=insert(a,el,ind)
-print(a)'''
+print(a)
 #deletion of array
-'''def delete(ar,el):
+def delete(ar,el):
   ar2=[0 for i in range(len(a)-1)]
   for i in range(el):
     ar2[i]=ar[i]
@@ -83,9 +83,9 @@ a=list(map(int, input().split(' ')))[:n]
 print(a)
 el=int(input())
 a=delete(a,el)
-print(a)'''
+print(a)
 #right rotation
-'''def rotaion(a,key):
+def rotaion(a,key):
   ar=[0 for i in range(len(a))]
   ind=0
   for i in range(len(a)-key,len(a)):
@@ -100,9 +100,9 @@ a=list(map(int, input().split(' ')))[:n]
 print(a)
 ind=int(input())
 a=rotaion(a,ind)
-print(a)'''
+print(a)
 #left rotation
-'''def rotation(a,key):
+def rotation(a,key):
   ar=[0 for i in range(len(a))]
   ind=0
   for i in range(key,len(a)):
@@ -117,9 +117,9 @@ a=list(map(int, input().split(' ')))[:n]
 print(a)
 ind=int(input())
 a=rotation(a,ind)
-print(a)'''
+print(a)
 #sliding window
-'''def maxsubarray(a,k):
+def maxsubarray(a,k):
   sum=0;
   for i in range(k):
     sum+=a[i]
@@ -131,9 +131,9 @@ print(a)'''
   print(max)
 a=[1,2,3,4,5,6,7,1]
 print(a)
-maxsubarray(a,3)'''
+maxsubarray(a,3)
 #linear search
-'''def linearsearch(a,ele):
+def linearsearch(a,ele):
   ar=[]
   for i in range(len(a)):
     if a[i]==ele:
@@ -141,9 +141,9 @@ maxsubarray(a,3)'''
   return ar    
 a=[12,33,2,4,11,10,33,33]
 ele=33
-print(linearsearch(a,ele))'''
+print(linearsearch(a,ele))
 #remove duplicates
-'''def remove_duplicates(arr):
+def remove_duplicates(arr):
   ind=1
   ar=[1]
   for i in range(1,len(arr)):
@@ -170,9 +170,9 @@ print(res)'''
           right -= 1
   return max_water
 heights = [1, 8, 6, 2, 5, 4, 8, 3, 7]
-print(max_water_container(heights))'''  
+print(max_water_container(heights))
 #sum of sub array
-'''def max_sum_subarray(arr, k):
+def max_sum_subarray(arr, k):
   window_sum = sum(arr[:k])
   max_sum = window_sum
   for i in range(k, len(arr)):
@@ -180,9 +180,9 @@ print(max_water_container(heights))'''
       max_sum = max(max_sum, window_sum)
   return max_sum
 temperatures = [2, 1, 5, 1, 3, 2, 8, 1, 3]
-print(max_sum_subarray(temperatures, 3))'''
+print(max_sum_subarray(temperatures, 3))
 #smallest max_sum_subarray
-'''def min_subarray_with_sum(arr, target):
+def min_subarray_with_sum(arr, target):
   min_length = float('inf')
   window_sum = 0
   start = 0
@@ -194,7 +194,7 @@ print(max_sum_subarray(temperatures, 3))'''
         start +=1
   return min_length if min_length != float('inf') else 0
 numbers = [2, 3, 1, 2, 4, 3]
-print(min_subarray_with_sum(numbers, 7)) ''' 
+print(min_subarray_with_sum(numbers, 7)) 
 #prefix array
 def prefixarray(a):
   ar=[0 for _ in range(len(a))]
