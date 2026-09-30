@@ -42,4 +42,5 @@ queue.enqueue(40)
 queue.enqueue(50)
 print(queue.dequeue())
 print(queue.peek())
-print(queue.rear())
+print(queue.rear()) 
+
