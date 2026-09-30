@@ -84,4 +84,3 @@ ll.insertatStart(30)
 ll.traverse()
 ll.delatlast()
 ll.traverse()
-       
